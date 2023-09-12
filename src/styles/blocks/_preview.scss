@@ -3,10 +3,16 @@
   padding: 146px 0 162px 0;
   position: relative;
 
-  &::after {
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
     content: "";
     background: url(../../img/bg/preview.png) no-repeat;
     position: absolute;
+    display: block;
     top: 0;
     right: 0;
     height: 100%;
@@ -17,18 +23,60 @@
     font-size: 36px;
     font-weight: 700;
     color: #364844;
-    width: 376px;
+    max-width: 376px;
     line-height: 46px;
     margin-bottom: 15px;
   }
 
   &__info {
-    width: 367px;
+    max-width: 367px;
 
     &-text {
       line-height: 24px;
       color: #364844;
       font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preview {
+    padding-top: 0;
+    padding-bottom: 50px;
+
+    &::before {
+      position: static;
+      height: 288px;
+      width: 100%;
+    }
+
+    &__container {
+      margin-top: 34px;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 26px;
+      max-width: 100%;
+      line-height: 35px;
+      margin-bottom: 6px;
+    }
+
+    &__info {
+      max-width: 100%;
+
+      &-text {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .preview{
+    &__container{
+      text-align: left;
     }
   }
 }

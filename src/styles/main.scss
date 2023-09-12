@@ -67,6 +67,10 @@ input {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
+
+  @media screen and (max-width:1150px) {
+    padding: 0 15px;
+  }
 }
 
 @import "./blocks/*.scss";

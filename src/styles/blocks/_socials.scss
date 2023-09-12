@@ -12,3 +12,16 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .socials {
+    &__icon {
+      width: 23px;
+      height: 23px;
+    }
+
+    &__item {
+      margin-right: 20px;
+    }
+  }
+}
