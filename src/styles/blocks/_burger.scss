@@ -5,6 +5,7 @@
   cursor: pointer;
   z-index: 15;
   position: relative;
+  flex-shrink: 0;
 
   margin-right: 43px;
   transition: all 0.4s;

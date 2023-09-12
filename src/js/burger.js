@@ -1,5 +1,5 @@
 let burger = document.querySelector("#burger");
-// let overlay = document.querySelector(".overlay");
+let overlay = document.querySelector("#overlay");
 let body = document.querySelector("body");
 
 // let links = document.querySelectorAll(".menu__link");
@@ -10,7 +10,7 @@ let body = document.querySelector("body");
 
 function toggleMenu() {
   burger.classList.toggle("burger--active");
-  //   overlay.classList.toggle("overlay--active");
+    overlay.classList.toggle("overlay--active");
   body.classList.toggle("body--active-menu");
 }
 
