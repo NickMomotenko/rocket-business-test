@@ -8,10 +8,13 @@
   z-index: 5;
   opacity: 0;
 
-  transition: .4s;
+  transition: 0.4s;
+
+  &__menu {
+    padding-left: 19px;
+  }
 
   .menu {
-    padding-left: 19px;
     margin-top: 113px;
     margin-bottom: 39px;
 
@@ -37,7 +40,7 @@
     }
   }
 
-  &--active{
+  &--active {
     top: 0;
     opacity: 1;
   }

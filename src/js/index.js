@@ -8,6 +8,7 @@
   const sliderDisplayAll = document.querySelector("#slider-display-all");
 
   let currentIndex = 0;
+  let pageNumber = 1;
 
   sliderDisplayAll.textContent = sliderList.children.length;
 
@@ -30,11 +31,9 @@
       if (currentIndex === 0) return;
 
       currentIndex -= 1;
+      pageNumber -= 1;
 
-      sliderDisplayCurrent.textContent =
-        currentIndex === 0 || currentIndex === 1 ? 1 : currentIndex - 1;
-
-      console.log(currentIndex);
+      sliderDisplayCurrent.textContent = pageNumber;
 
       doTranslate();
     }
@@ -43,9 +42,9 @@
       if (currentIndex === sliderList.children.length - 1) return;
 
       currentIndex += 1;
-      console.log(currentIndex);
+      pageNumber += 1;
 
-      sliderDisplayCurrent.textContent = currentIndex + 1;
+      sliderDisplayCurrent.textContent = pageNumber;
 
       doTranslate();
     }
