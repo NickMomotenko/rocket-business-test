@@ -1,5 +1,6 @@
-# Тестовое задание для its.agency
+git clone https://github.com/NickMomotenko/rocket-business-test.git
 
-Страница каталога
+npm install / yarn
 
-Технологии: html5 , css (scss) , native js , gulp 
+npm run gulp (dev)
+npm run build (prod)
