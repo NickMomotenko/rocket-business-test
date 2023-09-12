@@ -20,6 +20,8 @@
 
 @media screen and (max-width: 840px) {
   .footer {
+    padding: 42px 0;
+
     &__menu {
       display: none;
     }
@@ -28,8 +30,6 @@
 
 @media screen and (max-width: 480px) {
   .footer {
-    padding: 42px 0;
-
     &__bottom {
       display: block;
       margin-top: 32px;

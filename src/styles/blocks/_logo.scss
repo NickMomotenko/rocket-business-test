@@ -1,0 +1,14 @@
+.logo {
+  &__link {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    svg {
+      width: 62px;
+      height: 19px;
+    }
+  }
+}

@@ -73,7 +73,7 @@
                 >
               </div>
               <div class="header__btns">
-                <button class="button button--record">
+                <button class="button button--order">
                   Записаться на прием
                 </button>
               </div>
@@ -151,7 +151,7 @@
                         </div>
                       </div>
                       <div class="check-up__btns">
-                        <button class="button check-up__order-btn">
+                        <button class="button button--order check-up__order-btn">
                           Записаться
                         </button>
                         <button class="button button--no-bg">Подробнее</button>
@@ -195,7 +195,7 @@
                         </div>
                       </div>
                       <div class="check-up__btns">
-                        <button class="button check-up__order-btn">
+                        <button class="button button--order check-up__order-btn">
                           Записаться
                         </button>
                         <button class="button button--no-bg">Подробнее</button>
@@ -239,7 +239,7 @@
                         </div>
                       </div>
                       <div class="check-up__btns">
-                        <button class="button check-up__order-btn">
+                        <button class="button button--order check-up__order-btn">
                           Записаться
                         </button>
                         <button class="button button--no-bg">Подробнее</button>
@@ -283,7 +283,7 @@
                         </div>
                       </div>
                       <div class="check-up__btns">
-                        <button class="button check-up__order-btn">
+                        <button class="button button--order check-up__order-btn">
                           Записаться
                         </button>
                         <button class="button button--no-bg">Подробнее</button>
@@ -301,11 +301,19 @@
               </ul>
               <div class="check-up__controlls" id="slider-controlls">
                 <button class="button button--icon" data-click="prev">
-                  <img
-                    src="./img/icons/line.svg"
-                    alt=""
+                  <svg
+                    width="34"
+                    height="18"
+                    viewBox="0 0 34 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                     class="button__icon button__icon--prev"
-                  />
+                  >
+                    <path
+                      d="M32.6718 7.67186H4.54493L9.20426 3.03512C9.72416 2.51768 9.72615 1.67678 9.20871 1.15689C8.69127 0.636925 7.8503 0.635 7.33041 1.15237L0.390691 8.05861C0.390226 8.05901 0.389894 8.05947 0.389496 8.05987C-0.129071 8.57731 -0.130731 9.42093 0.389363 9.94009C0.389828 9.94049 0.39016 9.94095 0.390558 9.94135L7.33028 16.8476C7.85011 17.3649 8.69107 17.3631 9.20858 16.8431C9.72602 16.3232 9.72402 15.4823 9.20413 14.9648L4.54493 10.3281H32.6718C33.4054 10.3281 34 9.7335 34 8.99998C34 8.26646 33.4054 7.67186 32.6718 7.67186Z"
+                      fill="#E1E1E1"
+                    />
+                  </svg>
                 </button>
                 <div class="check-up__display" id="slider-display">
                   <span
@@ -319,11 +327,19 @@
                   >
                 </div>
                 <button class="button button--icon" data-click="next">
-                  <img
-                    src="./img/icons/line.svg"
-                    alt=""
+                  <svg
+                    width="34"
+                    height="18"
+                    viewBox="0 0 34 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                     class="button__icon button__icon--next"
-                  />
+                  >
+                    <path
+                      d="M32.6718 7.67186H4.54493L9.20426 3.03512C9.72416 2.51768 9.72615 1.67678 9.20871 1.15689C8.69127 0.636925 7.8503 0.635 7.33041 1.15237L0.390691 8.05861C0.390226 8.05901 0.389894 8.05947 0.389496 8.05987C-0.129071 8.57731 -0.130731 9.42093 0.389363 9.94009C0.389828 9.94049 0.39016 9.94095 0.390558 9.94135L7.33028 16.8476C7.85011 17.3649 8.69107 17.3631 9.20858 16.8431C9.72602 16.3232 9.72402 15.4823 9.20413 14.9648L4.54493 10.3281H32.6718C33.4054 10.3281 34 9.7335 34 8.99998C34 8.26646 33.4054 7.67186 32.6718 7.67186Z"
+                      fill="#E1E1E1"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -457,13 +473,40 @@
             </li>
           </ul>
         </nav>
-        <button class="button button--write button--no-bg">
+        <button class="button button--write button--order button--no-bg">
           Записаться на прием
         </button>
       </div>
     </div>
 
+    <div class="form">
+      <form action="" class="form__content" id="form">
+        <label class="form__label">
+          <span class="form__text">Имя</span>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Ваше имя"
+            name="name"
+          />
+        </label>
+        <label class="form__label form__label--no-margin">
+          <span class="form__text">Номер телефона</span>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Ваш номер телефона"
+            name="tel"
+          />
+        </label>
+        <div class="form__button">
+          <button type="submit" class="button button--send">Отправить</button>
+        </div>
+      </form>
+    </div>
+
     <script src="./js/index.js"></script>
     <script src="./js/burger.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>

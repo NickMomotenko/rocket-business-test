@@ -39,6 +39,10 @@
 
     &:hover {
       background-color: transparent;
+
+      svg path {
+        fill: #0dbc91;
+      }
     }
 
     &:focus {
@@ -50,5 +54,10 @@
     &--next {
       transform: rotate(180deg);
     }
+  }
+
+  &--send{
+    width: 100%;
+    max-width: 100%;
   }
 }
