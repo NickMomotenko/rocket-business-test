@@ -1,0 +1,21 @@
+.address {
+  display: inline-flex;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 19px;
+    width: 13.03px;
+    background: url(../../img/icons/metka.svg) center no-repeat;
+    margin-right: 5px;
+  }
+
+  &__city {
+    color: #364844;
+    line-height: 21px;
+  }
+
+  &__street {
+    color: #868686;
+  }
+}

@@ -1,0 +1,12 @@
+.price {
+  color: #364844;
+  font-size: 20px;
+  display: flex;
+
+  &--old{
+    color: #868686;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,34 @@
+.preview {
+  background-color: #f8fbfa;
+  padding: 146px 0 162px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url(../../img/bg/preview.png) no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 934px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #364844;
+    width: 376px;
+    line-height: 46px;
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    width: 367px;
+
+    &-text {
+      line-height: 24px;
+      color: #364844;
+      font-size: 16px;
+    }
+  }
+}

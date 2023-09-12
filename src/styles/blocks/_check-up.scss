@@ -1,0 +1,99 @@
+.check-up {
+  padding: 100px 0 98px 0;
+
+  &__body {
+    // background-color: #e2f0ef;
+    font-weight: 700;
+    color: #364844;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 61px 0 0 62px;
+    background: url(../../img/bg/triangle.png) no-repeat;
+    min-width: 613px;
+    position: relative;
+  }
+
+  &__image {
+    margin-left: -118px;
+  }
+
+  &__title {
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__purpose {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  &__options{
+    margin-bottom: 40px;
+  }
+
+  &__options-item {
+    font-size: 16px;
+    margin-bottom: 13px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      background-color: #1fa181;
+      height: 7px;
+      width: 7px;
+      margin-right: 9px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__price {
+    color: #364844;
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 30px;
+
+    &-title {
+      margin-right: 7px;
+    }
+
+    &-total {
+      margin-right: 16px;
+    }
+  }
+
+  &__order-btn {
+    margin-right: 11px;
+  }
+
+  &__controlls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+  }
+
+  &__display {
+    color: #c0c0c0;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 34px;
+
+    &-current {
+      color: #364844;
+    }
+
+    &-text {
+      margin: 0 1px;
+    }
+  }
+}

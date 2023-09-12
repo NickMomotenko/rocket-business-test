@@ -1,0 +1,15 @@
+.footer {
+  background: #08664f;
+  padding: 54px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    margin-left: 40px;
+    margin-top: -3px;
+  }
+}

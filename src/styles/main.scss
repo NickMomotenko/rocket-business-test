@@ -11,12 +11,13 @@ html {
   font-weight: 400;
   font-size: 14px;
   overflow-x: hidden;
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
 }
 
 button {
   outline: none;
   padding: 0;
-  color: #000000;
   border: 1px solid transparent;
   background: transparent;
   cursor: pointer;
@@ -28,6 +29,10 @@ h1,
 h2,
 h3 {
   margin: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 ul,
@@ -58,7 +63,10 @@ input {
   background: #fff;
 }
 
-// .container {
-// }
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 @import "./blocks/*.scss";

@@ -1,0 +1,54 @@
+.button {
+  background-color: #0dbc91;
+  color: #fff;
+  font-size: 14px;
+  padding: 11px 24px;
+  border-radius: 50px;
+  max-width: 196px;
+  width: 100%;
+  white-space: nowrap;
+
+  transition: 0.4s;
+
+  &:hover {
+    background-color: #00d29f;
+  }
+
+  &:focus {
+    border-color: black;
+  }
+
+  &--no-bg {
+    background-color: transparent;
+    color: #0dbc91;
+    border-color: #0dbc91;
+
+    &:hover {
+      background-color: #0dbc91;
+      color: #fff;
+      border-color: transparent;
+    }
+  }
+
+  &--icon {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    width: auto;
+    padding: 0;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
+
+  &__icon {
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}

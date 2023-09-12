@@ -5,11 +5,359 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.min.css" />
-    <title>Colors - Краски</title>
+    <title>Rocket test</title>
   </head>
 
   <body>
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__col">
+              <div class="header__logo logo">
+                <a href="#" class="logo__link">
+                  <img src="./img/logo.svg" alt="Logo icon" class="logo__img" />
+                </a>
+              </div>
+              <address class="address">
+                <div class="address__content">
+                  <div class="address__city">Ростов-на-Дону</div>
+                  <a href="#" class="address__street">ул. Ленина, 2Б</a>
+                </div>
+              </address>
+            </div>
+            <div class="header__col">
+              <div class="header__phone phone">
+                <a href="tel:+78630000000" class="phone__number"
+                  >+7(863) 000 00 00</a
+                >
+              </div>
+              <div class="header__btns">
+                <button class="button button--record">
+                  Записаться на прием
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О клинике</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Специалисты</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Цены</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="preview">
+          <div class="container">
+            <h1 class="preview__title">
+              Многопрофильная клиника для детей и взрослых
+            </h1>
+            <div class="preview__info">
+              <p class="preview__info-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="check-up slider">
+          <div class="container">
+            <div class="slider__wrapper" id="slider-wrapper">
+              <ul class="check-up__list slider__list" id="slider-list">
+                <li class="check-up__item slider__item">
+                  <div class="check-up__body">
+                    <div class="check-up__content">
+                      <h2 class="check-up__title">Check-UP</h2>
+                      <div class="check-up__purpose">для мужчин</div>
+                      <ul class="check-up__options">
+                        <li class="check-up__options-item">
+                          Гормональный скрининг
+                        </li>
+                        <li class="check-up__options-item">Тестостерон</li>
+                        <li class="check-up__options-item">
+                          Свободный тестостерон
+                        </li>
+                        <li class="check-up__options-item">
+                          Глобулин, связывающий половые гормоны
+                        </li>
+                      </ul>
+                      <div class="check-up__price">
+                        <span class="check-up__price-title">Всего</span>
+                        <div class="check-up__price-total price">
+                          <span class="price__value">2800</span>
+                          <span class="price__currency">₽</span>
+                        </div>
+                        <div class="check-up__price-old price price--old">
+                          <span class="price__value">3500</span>
+                          <span class="price__currency">₽</span>
+                        </div>
+                      </div>
+                      <div class="check-up__btns">
+                        <button class="button check-up__order-btn">
+                          Записаться
+                        </button>
+                        <button class="button button--no-bg">Подробнее</button>
+                      </div>
+                    </div>
+                    <div class="check-up__image">
+                      <img
+                        src="./img/check-up/1.png"
+                        alt="Slider image"
+                        class="check-up__picture"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li class="check-up__item slider__item">
+                  <div class="check-up__body">
+                    <div class="check-up__content">
+                      <h2 class="check-up__title">Check-UP</h2>
+                      <div class="check-up__purpose">для мужчин</div>
+                      <ul class="check-up__options">
+                        <li class="check-up__options-item">
+                          Гормональный скрининг
+                        </li>
+                        <li class="check-up__options-item">Тестостерон</li>
+                        <li class="check-up__options-item">
+                          Свободный тестостерон
+                        </li>
+                        <li class="check-up__options-item">
+                          Глобулин, связывающий половые гормоны
+                        </li>
+                      </ul>
+                      <div class="check-up__price">
+                        <span class="check-up__price-title">Всего</span>
+                        <div class="check-up__price-total price">
+                          <span class="price__value">2800</span>
+                          <span class="price__currency">₽</span>
+                        </div>
+                        <div class="check-up__price-old price price--old">
+                          <span class="price__value">3500</span>
+                          <span class="price__currency">₽</span>
+                        </div>
+                      </div>
+                      <div class="check-up__btns">
+                        <button class="button check-up__order-btn">
+                          Записаться
+                        </button>
+                        <button class="button button--no-bg">Подробнее</button>
+                      </div>
+                    </div>
+                    <div class="check-up__image">
+                      <img
+                        src="./img/check-up/1.png"
+                        alt="Slider image"
+                        class="check-up__picture"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li class="check-up__item slider__item">
+                  <div class="check-up__body">
+                    <div class="check-up__content">
+                      <h2 class="check-up__title">Check-UP</h2>
+                      <div class="check-up__purpose">для мужчин</div>
+                      <ul class="check-up__options">
+                        <li class="check-up__options-item">
+                          Гормональный скрининг
+                        </li>
+                        <li class="check-up__options-item">Тестостерон</li>
+                        <li class="check-up__options-item">
+                          Свободный тестостерон
+                        </li>
+                        <li class="check-up__options-item">
+                          Глобулин, связывающий половые гормоны
+                        </li>
+                      </ul>
+                      <div class="check-up__price">
+                        <span class="check-up__price-title">Всего</span>
+                        <div class="check-up__price-total price">
+                          <span class="price__value">2800</span>
+                          <span class="price__currency">₽</span>
+                        </div>
+                        <div class="check-up__price-old price price--old">
+                          <span class="price__value">3500</span>
+                          <span class="price__currency">₽</span>
+                        </div>
+                      </div>
+                      <div class="check-up__btns">
+                        <button class="button check-up__order-btn">
+                          Записаться
+                        </button>
+                        <button class="button button--no-bg">Подробнее</button>
+                      </div>
+                    </div>
+                    <div class="check-up__image">
+                      <img
+                        src="./img/check-up/1.png"
+                        alt="Slider image"
+                        class="check-up__picture"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li class="check-up__item slider__item">
+                  <div class="check-up__body">
+                    <div class="check-up__content">
+                      <h2 class="check-up__title">Check-UP</h2>
+                      <div class="check-up__purpose">для мужчин</div>
+                      <ul class="check-up__options">
+                        <li class="check-up__options-item">
+                          Гормональный скрининг
+                        </li>
+                        <li class="check-up__options-item">Тестостерон</li>
+                        <li class="check-up__options-item">
+                          Свободный тестостерон
+                        </li>
+                        <li class="check-up__options-item">
+                          Глобулин, связывающий половые гормоны
+                        </li>
+                      </ul>
+                      <div class="check-up__price">
+                        <span class="check-up__price-title">Всего</span>
+                        <div class="check-up__price-total price">
+                          <span class="price__value">2800</span>
+                          <span class="price__currency">₽</span>
+                        </div>
+                        <div class="check-up__price-old price price--old">
+                          <span class="price__value">3500</span>
+                          <span class="price__currency">₽</span>
+                        </div>
+                      </div>
+                      <div class="check-up__btns">
+                        <button class="button check-up__order-btn">
+                          Записаться
+                        </button>
+                        <button class="button button--no-bg">Подробнее</button>
+                      </div>
+                    </div>
+                    <div class="check-up__image">
+                      <img
+                        src="./img/check-up/1.png"
+                        alt="Slider image"
+                        class="check-up__picture"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="check-up__controlls" id="slider-controlls">
+                <button class="button button--icon" data-click="prev">
+                  <img
+                    src="./img/icons/line.svg"
+                    alt=""
+                    class="button__icon button__icon--prev"
+                  />
+                </button>
+                <div class="check-up__display" id="slider-display">
+                  <span
+                    class="check-up__display-current"
+                    id="slider-display-current"
+                    >1</span
+                  >
+                  <span class="check-up__display-text">/</span>
+                  <span class="check-up__display-all" id="slider-display-all"
+                    >4</span
+                  >
+                </div>
+                <button class="button button--icon" data-click="next">
+                  <img
+                    src="./img/icons/line.svg"
+                    alt=""
+                    class="button__icon button__icon--next"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="./img/logo.svg" alt="Logo icon" class="logo__icon" />
+            </a>
+          </div>
+          <nav class="footer__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">О клинике</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Специалисты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Цены</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <img
+                    src="./img/socials/insta.png"
+                    alt="Insta icon"
+                    class="socials__icon"
+                  />
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <img
+                    src="./img/socials/whatsup.png"
+                    alt="Whats up icon"
+                    class="socials__icon"
+                  />
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <img
+                    src="./img/socials/telega.png"
+                    alt="Telegram icon"
+                    class="socials__icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+.slider {
+  &__wrapper {
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    transition: 0.5s;
+  }
+
+  &__item {
+    min-width: 100%;
+    width: 100%;
+  }
+}
