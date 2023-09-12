@@ -14,13 +14,14 @@
 
   sliderControlls.addEventListener("click", (event) => {
     const target = event.target;
+    console.log(target);
 
     if (target.classList.contains("button")) {
       const direction = target.dataset.click;
 
       getDirection(direction);
     } else if (target.closest(".button")) {
-      const direction = target.parentNode.dataset.click;
+      const direction = target.closest(".button").dataset.click;
 
       getDirection(direction);
     }
