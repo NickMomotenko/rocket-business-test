@@ -48,6 +48,7 @@
       position: static;
       height: 288px;
       width: 100%;
+      background-size: cover;
     }
 
     &__container {
@@ -74,8 +75,8 @@
 }
 
 @media screen and (max-width: 375px) {
-  .preview{
-    &__container{
+  .preview {
+    &__container {
       text-align: left;
     }
   }

@@ -31,21 +31,27 @@
   }
 }
 
-@media screen and (max-width:768px){
-  .header{
+@media screen and (max-width: 768px) {
+  .header {
     position: sticky;
     top: 0;
     z-index: 7;
 
-    &__right{
+    background: #f6f6f6;
+
+    &__top {
+      padding: 5px 0;
+    }
+
+    &__right {
       display: none;
     }
 
-    &__left{
+    &__left {
       width: 100%;
     }
 
-    &__bottom{
+    &__bottom {
       display: none;
     }
   }
